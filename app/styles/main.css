@@ -5286,3 +5286,23 @@ a {
     margin-top: -30px; }
     .cover .cover-content h1 {
       margin-bottom: 40px; }
+
+.modal.modal-video .modal-dialog {
+  width: 853px; }
+.modal.modal-video .modal-content {
+  box-shadow: none;
+  background-color: transparent;
+  border: none; }
+.modal.modal-video .modal-body {
+  padding: 0; }
+.modal.modal-video .close {
+  position: absolute;
+  right: 0;
+  color: white;
+  font-size: 35px;
+  opacity: 1;
+  z-index: 100;
+  margin: 0;
+  line-height: 25px; }
+  .modal.modal-video .close:focus {
+    outline: none; }

@@ -120,3 +120,31 @@ a {
         }
     }
 }
+
+// video modal
+.modal.modal-video {
+    .modal-dialog {
+        width: 853px;
+    }
+    .modal-content {
+        box-shadow: none;
+        background-color: transparent;
+        border: none;
+    }
+    .modal-body {
+        padding: 0;
+    }
+    .close {
+        position: absolute;
+        right: 0;
+        color: white;
+        font-size: 35px;
+        opacity: 1;
+        z-index: 100;
+        margin: 0;
+        line-height: 25px;
+        &:focus {
+            outline: none;
+        }
+    }
+}

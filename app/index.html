@@ -50,15 +50,27 @@
         </div>
     </div>
 
-    <header class="cover container-fluid">
+    <div class="cover container-fluid">
         <figure>
             <img src="/images/cover.jpg"></img>
         </figure>
         <div class="cover-content">
             <h1>WHITE MOONLIGHT</h1>
-            <a href="#" class="btn btn-default" role="button">PLAY</a>
+            <a href="#" class="btn btn-default" role="button" data-toggle="modal" data-target="#videoModal" data-video-id="1">PLAY</a>
         </div>
-    </header>
+    </div>
+
+
+    <!-- Video Modal -->
+    <div class="modal fade modal-video" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <div class="modal-body">
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
