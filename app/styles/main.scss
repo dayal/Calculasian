@@ -13,7 +13,17 @@ body, .navbar-default {
 }
 
 h1 {
-    font-size: 60px;
+    @media (min-width: $screen-sm-min) {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
+        font-size: 45px;
+        margin-bottom: 25px;
+    }
+    font-size: 30px;
+    margin-bottom: 15px;
+
     letter-spacing: 0px;
     text-shadow: 4px 4px #686666;
     color: white;
@@ -32,78 +42,110 @@ img.ratio {
 
 .btn-default {
     background-color: rgba(0,0,0,0.3);
-    font-size: 15px;
-    letter-spacing: 2px;
     color: white;
-    padding: 10px 40px;
+    @media (min-width: $screen-sm-min) {
+        font-size: 15px;
+        padding: 10px 40px;
+        letter-spacing: 2px;
+    }
+    @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
+        font-size: 15px;
+        padding: 10px 40px;
+        letter-spacing: 2px;
+    }
+    font-size: 12px;
+    padding: 5px 20px;
+    letter-spacing: 1px;
 }
 
-.navbar .container {
-    margin: 40px auto 20px auto;
-    .navbar-header {
-        margin: 0;
-    }
-    .navbar-toggle {
-        color: #a9a9a9;
-        margin-right: 0;
-    }
-    .navbar-brand {
-        color: white;
-        font-weight: bold;
-        text-shadow: 2px 2px #686666;
-        letter-spacing: 1px;
-        font-size: 40px;
-        padding: 15px 0px;
-        margin: 0;
-        &:hover, &:focus {
-            color: white;
+.navbar {
+    margin-bottom: 0;
+    .container {
+        @media (min-width: $screen-sm-min) {
+            margin: 40px auto 20px auto;
         }
-    }
-    .navbar-nav {
-        float: right;
-        li {
-            font-size: 20px;
-            // TODO: change to 20px for larger screens
-            margin: 0 0 0 20px;
-            a {
-                padding: 16px 0;
-                // link effects from http://tympanus.net/Development/CreativeLinkEffects/
-                &:before, &:after {
-                    display: inline-block;
-                    opacity: 0;
-                    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-                    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-                    transition: transform 0.3s, opacity 0.2s;
+        @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
+            margin: 30px auto 15px auto;
+        }
+        margin: 20px auto 10px auto;
+        .navbar-header {
+            margin: 0;
+        }
+        .navbar-toggle {
+            color: #a9a9a9;
+            margin-right: 14px;
+        }
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+            text-shadow: 2px 2px #686666;
+            letter-spacing: 1px;
+            padding: 15px 0px;
+            margin: 0;
+            &:hover, &:focus {
+                color: white;
+            }
+            @media (min-width: $screen-xs-min) {
+                font-size: 40px;
+            }
+            font-size: 30px;
+        }
+        .navbar-collapse {
+            border: none;
+            box-shadow: none;
+        }
+        .navbar-nav {
+            float: right;
+            li {
+                @media (min-width: $screen-sm-min) {
+                    a {
+                        padding: 16px 0;
+                    }
+                    font-size: 20px;
+                    margin-top: 10px;
                 }
-                &:before {
-                    margin-right: 10px;
-                    content: '[';
-                    -webkit-transform: translateX(20px);
-                    -moz-transform: translateX(20px);
-                    transform: translateX(20px);
-                }
-                &:after {
-                    margin-left: 10px;
-                    content: ']';
-                    -webkit-transform: translateX(-20px);
-                    -moz-transform: translateX(-20px);
-                    transform: translateX(-20px);
-                }
-                &:hover:before, &:hover:after, &:focus:before, &:focus:after {
-                    opacity: 1;
-                    -webkit-transform: translateX(0px);
-                    -moz-transform: translateX(0px);
-                    transform: translateX(0px);
-                }
-                &:hover {
-                    background-color: inherit;
-                    color: inherit;
+                text-align: center;
+                font-size: 15px;
+                margin: 0 0 0 20px;
+                a {
+                    padding: 5px 0;
+                    // link effects from http://tympanus.net/Development/CreativeLinkEffects/
+                    &:before, &:after {
+                        display: inline-block;
+                        opacity: 0;
+                        -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+                        -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+                        transition: transform 0.3s, opacity 0.2s;
+                    }
+                    &:before {
+                        margin-right: 10px;
+                        content: '[';
+                        -webkit-transform: translateX(20px);
+                        -moz-transform: translateX(20px);
+                        transform: translateX(20px);
+                    }
+                    &:after {
+                        margin-left: 10px;
+                        content: ']';
+                        -webkit-transform: translateX(-20px);
+                        -moz-transform: translateX(-20px);
+                        transform: translateX(-20px);
+                    }
+                    &:hover:before, &:hover:after, &:focus:before, &:focus:after {
+                        opacity: 1;
+                        -webkit-transform: translateX(0px);
+                        -moz-transform: translateX(0px);
+                        transform: translateX(0px);
+                    }
+                    &:hover {
+                        background-color: inherit;
+                        color: inherit;
+                    }
                 }
             }
         }
     }
 }
-
 
 // cover
 .cover {
@@ -121,17 +163,14 @@ img.ratio {
         width: 100%;
         text-align: center;
         margin-top: -30px;
-        h1 {
-            margin-bottom: 40px;
-        }
     }
 }
 
 // video modal
 .modal.modal-video {
     .modal-dialog {
-        @media (min-width: $screen-md-min) {
-            width: 853px;
+        @media (min-width: $screen-sm-min) {
+            width: 768px;
         }
         margin: 9% auto 0 auto;
     }

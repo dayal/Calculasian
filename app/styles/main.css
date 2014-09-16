@@ -5204,11 +5204,20 @@ body, .navbar-default {
   background: #1a1a1a url(../images/bg.png); }
 
 h1 {
-  font-size: 60px;
+  font-size: 30px;
+  margin-bottom: 15px;
   letter-spacing: 0px;
   text-shadow: 4px 4px #686666;
   color: white;
   font-weight: bold; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 60px;
+      margin-bottom: 40px; } }
+  @media (min-width: 480px) and (max-width: 768px) {
+    h1 {
+      font-size: 45px;
+      margin-bottom: 25px; } }
 
 a {
   color: #a9a9a9; }
@@ -5220,61 +5229,92 @@ img.ratio {
 
 .btn-default {
   background-color: rgba(0, 0, 0, 0.3);
-  font-size: 15px;
-  letter-spacing: 2px;
   color: white;
-  padding: 10px 40px; }
+  font-size: 12px;
+  padding: 5px 20px;
+  letter-spacing: 1px; }
+  @media (min-width: 768px) {
+    .btn-default {
+      font-size: 15px;
+      padding: 10px 40px;
+      letter-spacing: 2px; } }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .btn-default {
+      font-size: 15px;
+      padding: 10px 40px;
+      letter-spacing: 2px; } }
 
-.navbar .container {
-  margin: 40px auto 20px auto; }
-  .navbar .container .navbar-header {
-    margin: 0; }
-  .navbar .container .navbar-toggle {
-    color: #a9a9a9;
-    margin-right: 0; }
-  .navbar .container .navbar-brand {
-    color: white;
-    font-weight: bold;
-    text-shadow: 2px 2px #686666;
-    letter-spacing: 1px;
-    font-size: 40px;
-    padding: 15px 0px;
-    margin: 0; }
-    .navbar .container .navbar-brand:hover, .navbar .container .navbar-brand:focus {
-      color: white; }
-  .navbar .container .navbar-nav {
-    float: right; }
-    .navbar .container .navbar-nav li {
-      font-size: 20px;
-      margin: 0 0 0 20px; }
-      .navbar .container .navbar-nav li a {
-        padding: 16px 0; }
-        .navbar .container .navbar-nav li a:before, .navbar .container .navbar-nav li a:after {
-          display: inline-block;
-          opacity: 0;
-          -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
-          -moz-transition: -moz-transform 0.3s, opacity 0.2s;
-          transition: transform 0.3s, opacity 0.2s; }
-        .navbar .container .navbar-nav li a:before {
-          margin-right: 10px;
-          content: '[';
-          -webkit-transform: translateX(20px);
-          -moz-transform: translateX(20px);
-          transform: translateX(20px); }
-        .navbar .container .navbar-nav li a:after {
-          margin-left: 10px;
-          content: ']';
-          -webkit-transform: translateX(-20px);
-          -moz-transform: translateX(-20px);
-          transform: translateX(-20px); }
-        .navbar .container .navbar-nav li a:hover:before, .navbar .container .navbar-nav li a:hover:after, .navbar .container .navbar-nav li a:focus:before, .navbar .container .navbar-nav li a:focus:after {
-          opacity: 1;
-          -webkit-transform: translateX(0px);
-          -moz-transform: translateX(0px);
-          transform: translateX(0px); }
-        .navbar .container .navbar-nav li a:hover {
-          background-color: inherit;
-          color: inherit; }
+.navbar {
+  margin-bottom: 0; }
+  .navbar .container {
+    margin: 20px auto 10px auto; }
+    @media (min-width: 768px) {
+      .navbar .container {
+        margin: 40px auto 20px auto; } }
+    @media (min-width: 480px) and (max-width: 768px) {
+      .navbar .container {
+        margin: 30px auto 15px auto; } }
+    .navbar .container .navbar-header {
+      margin: 0; }
+    .navbar .container .navbar-toggle {
+      color: #a9a9a9;
+      margin-right: 14px; }
+    .navbar .container .navbar-brand {
+      color: white;
+      font-weight: bold;
+      text-shadow: 2px 2px #686666;
+      letter-spacing: 1px;
+      padding: 15px 0px;
+      margin: 0;
+      font-size: 30px; }
+      .navbar .container .navbar-brand:hover, .navbar .container .navbar-brand:focus {
+        color: white; }
+      @media (min-width: 480px) {
+        .navbar .container .navbar-brand {
+          font-size: 40px; } }
+    .navbar .container .navbar-collapse {
+      border: none;
+      box-shadow: none; }
+    .navbar .container .navbar-nav {
+      float: right; }
+      .navbar .container .navbar-nav li {
+        text-align: center;
+        font-size: 15px;
+        margin: 0 0 0 20px; }
+        @media (min-width: 768px) {
+          .navbar .container .navbar-nav li {
+            font-size: 20px;
+            margin-top: 10px; }
+            .navbar .container .navbar-nav li a {
+              padding: 16px 0; } }
+        .navbar .container .navbar-nav li a {
+          padding: 5px 0; }
+          .navbar .container .navbar-nav li a:before, .navbar .container .navbar-nav li a:after {
+            display: inline-block;
+            opacity: 0;
+            -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+            -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+            transition: transform 0.3s, opacity 0.2s; }
+          .navbar .container .navbar-nav li a:before {
+            margin-right: 10px;
+            content: '[';
+            -webkit-transform: translateX(20px);
+            -moz-transform: translateX(20px);
+            transform: translateX(20px); }
+          .navbar .container .navbar-nav li a:after {
+            margin-left: 10px;
+            content: ']';
+            -webkit-transform: translateX(-20px);
+            -moz-transform: translateX(-20px);
+            transform: translateX(-20px); }
+          .navbar .container .navbar-nav li a:hover:before, .navbar .container .navbar-nav li a:hover:after, .navbar .container .navbar-nav li a:focus:before, .navbar .container .navbar-nav li a:focus:after {
+            opacity: 1;
+            -webkit-transform: translateX(0px);
+            -moz-transform: translateX(0px);
+            transform: translateX(0px); }
+          .navbar .container .navbar-nav li a:hover {
+            background-color: inherit;
+            color: inherit; }
 
 .cover {
   padding: 0;
@@ -5289,14 +5329,12 @@ img.ratio {
     width: 100%;
     text-align: center;
     margin-top: -30px; }
-    .cover .cover-content h1 {
-      margin-bottom: 40px; }
 
 .modal.modal-video .modal-dialog {
   margin: 9% auto 0 auto; }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .modal.modal-video .modal-dialog {
-      width: 853px; } }
+      width: 768px; } }
 .modal.modal-video .modal-content {
   box-shadow: none;
   background-color: transparent;
