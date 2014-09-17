@@ -17,3 +17,48 @@
         margin-top: -30px;
     }
 }
+
+// video page
+.video-page {
+    .video {
+        padding: 0 20px;
+        margin: 0 0 80px 0;
+        figure {
+            width: 100%;
+            position: relative;
+            margin: 0;
+            &:hover {
+                img {
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+                    transform: translateY(-60px);
+                }
+            }
+            img {
+                border: 1px solid #1a1a1a;
+                width: 100%;
+                height: 100%;
+                z-index: 10;
+                transition: transform 0.4s;
+                position: relative;
+            }
+            figcaption {
+                position: absolute;
+                height: 60px;
+                width: 100%;
+                top: auto;
+                bottom: 0;
+                background-color: #1a1a1a;
+                span {
+                    padding: 0 20px;
+                    line-height: 60px;
+                    color: white;
+                }
+                .btn {
+                    position: absolute;
+                    right: 20px;
+                    top: 13px;
+                }
+            }
+        }
+    }
+}
