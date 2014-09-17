@@ -1,0 +1,19 @@
+
+// cover
+.cover {
+    padding: 0;
+    position: relative;
+    figure {
+        width: 100%;
+        img {
+            width: 100%
+        }
+    }
+    .cover-content {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        margin-top: -30px;
+    }
+}

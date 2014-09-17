@@ -1,0 +1,54 @@
+.modal.modal-video {
+    overflow: hidden;
+    .modal-dialog {
+        @media (min-width: $screen-sm-min) {
+            width: 768px;
+        }
+        margin: 9% auto 0 auto;
+        background-color: black;
+    }
+
+    .modal-content {
+        background-color: transparent;
+        border: none;
+    }
+    .modal-body {
+        padding: 0;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        z-index: 0;
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .close {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        color: white;
+        font-size: 25px;
+        opacity: 1;
+        z-index: 100;
+        margin: 0;
+        line-height: 25px;
+        padding: 0px 0px 2px 2px;
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+img.ratio {    
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
