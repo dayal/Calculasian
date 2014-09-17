@@ -16,16 +16,17 @@ h1 {
     @media (min-width: $screen-sm-min) {
         font-size: 60px;
         margin-bottom: 40px;
+        text-shadow: 4px 4px #686666;
     }
     @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
         font-size: 45px;
         margin-bottom: 25px;
+        text-shadow: 3px 3px #686666;
     }
     font-size: 30px;
     margin-bottom: 15px;
-
+    text-shadow: 2px 2px #686666;
     letter-spacing: 0px;
-    text-shadow: 4px 4px #686666;
     color: white;
     font-weight: bold;
 }
@@ -62,18 +63,18 @@ img.ratio {
     margin-bottom: 0;
     .container {
         @media (min-width: $screen-sm-min) {
-            margin: 40px auto 20px auto;
+            margin: 30px auto 20px auto;
         }
         @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
-            margin: 30px auto 15px auto;
+            margin: 20px auto 15px auto;
         }
-        margin: 20px auto 10px auto;
+        margin: 10px auto 5px auto;
         .navbar-header {
             margin: 0;
         }
         .navbar-toggle {
             color: #a9a9a9;
-            margin-right: 14px;
+            margin-right: 0;
         }
         .navbar-brand {
             color: white;
@@ -85,10 +86,13 @@ img.ratio {
             &:hover, &:focus {
                 color: white;
             }
-            @media (min-width: $screen-xs-min) {
-                font-size: 40px;
+            @media (min-width: $screen-sm-min) {
+                font-size: 35px;
             }
-            font-size: 30px;
+            @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
+                font-size: 25px;
+            }
+            font-size: 20px;
         }
         .navbar-collapse {
             border: none;
@@ -168,6 +172,7 @@ img.ratio {
 
 // video modal
 .modal.modal-video {
+    overflow: hidden;
     .modal-dialog {
         @media (min-width: $screen-sm-min) {
             width: 768px;
@@ -176,13 +181,14 @@ img.ratio {
     }
 
     .modal-content {
-        box-shadow: none;
         background-color: transparent;
         border: none;
     }
     .modal-body {
         padding: 0;
-
+        border: 1px solid transparent;
+        border-radius: 20px;
+        z-index: 0;
         iframe {
             position: absolute;
             top: 0;
@@ -193,14 +199,20 @@ img.ratio {
     }
     .close {
         position: absolute;
-        right: 0;
+        right: -10px;
+        top: -10px;
         color: white;
-        font-size: 35px;
+        font-size: 25px;
         opacity: 1;
         z-index: 100;
         margin: 0;
         line-height: 25px;
-        padding: 5px 7px;
+        padding: 0px 0px 2px 2px;
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
         &:focus {
             outline: none;
         }
