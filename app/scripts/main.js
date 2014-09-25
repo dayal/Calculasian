@@ -9,6 +9,13 @@ $(function() {
 
     // Pause video when modal is closed
     $('#videoModal').on('hidden.bs.modal', function() {
-        $('#videoPlayer')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');   
+        $('#videoPlayer')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+    });
+
+    var $kwicks = $('.kwicks').kwicks({
+        // TODO: show full image
+        maxSize: '60%',
+        behavior: 'menu',
+        duration: 1000
     });
 });

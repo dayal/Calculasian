@@ -3,6 +3,7 @@
 .cover {
     padding: 0;
     position: relative;
+    margin-bottom: 80px;
     figure {
         width: 100%;
         img {
@@ -18,8 +19,8 @@
     }
 }
 
-// video page
-.video-page {
+// video section
+.video-section {
     .video {
         padding: 0 20px;
         margin: 0 0 80px 0;
@@ -61,4 +62,52 @@
             }
         }
     }
+}
+
+// about section
+.about-section {
+    margin-bottom: 80px;
+    .kwicks {
+        width: 100%;
+        li {
+            width: 16.66%;
+            figure {
+               img {
+                   height: 600px;
+               }
+           }
+           &:not(.kwicks-expanded) {
+               figure {
+                   img {
+                       transition: margin-left 1s;
+                       &#zhiyao {
+                           margin-left: -230px;
+                       }
+                       &#chen {
+                           margin-left: -447px;
+                       }
+                       &#ziming {
+                           margin-left: -512px;
+                       }
+                       &#xu {
+                           margin-left: -560px;
+                       }
+                       &#bob {
+                           margin-left: -422px;
+                       }
+                       &#david {
+                           margin-left: -429px;
+                       }
+                   }
+               }
+           }
+           &.kwicks-expanded {
+               figure {
+                   img {
+                       transition: margin-left 1s;
+                   }
+               }
+           }
+       }
+   }
 }

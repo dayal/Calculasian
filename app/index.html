@@ -9,11 +9,12 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
+    <link rel="stylesheet" href="/components/kwicks/jquery.kwicks.min.css">
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
 
-    <!-- build:css(app) styles/main.css -->
+    <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="/styles/main.css">
     <!-- endbuild -->
 
@@ -60,7 +61,7 @@
         </div>
     </div>
 
-    <div class="video-page container" id="videos">
+    <div class="video-section container-fluid" id="videos">
         <h2>VIDEOS</h2>
         <div class="video video-large col-sm-4 col-xs-6">
             <figure>
@@ -91,7 +92,7 @@
                 </figcaption>
             </figure>
         </div>
-        
+
         <div class="video video-large col-sm-4 col-xs-6">
             <figure>
                 <img src="/images/cover.jpg">
@@ -125,8 +126,32 @@
 
     </div>
 
-    <div class="video-page container" id="about">
+    <div class="about-section container-fluid" id="about">
         <h2>ABOUT</h2>
+        <ul class='kwicks kwicks-horizontal'>
+            <li>
+                <figure><img id="zhiyao" src="/images/zhiyao.jpg"></figure>
+            </li>
+            <li>
+                <figure><img id="chen" src="/images/chen.jpg"></figure>
+            </li>
+            <li>
+                <figure><img id="ziming" src="/images/ziming.jpg"></figure>
+            </li>
+            <li>
+                <figure><img id="xu" src="/images/xu.jpg"></figure>
+            </li>
+            <li>
+                <figure><img id="bob" src="/images/bob.jpg"></figure>
+            </li>
+            <li>
+                <figure><img id="david" src="/images/david.jpg"></figure>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container" style="margin-top:600px">
+        <h2>BLABLA</h2>
     </div>
 
 
@@ -182,6 +207,7 @@
     <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="/components/kwicks/jquery.kwicks.min.js"></script>
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
