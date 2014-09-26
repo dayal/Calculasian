@@ -5312,8 +5312,7 @@ img.ratio {
 
 .cover {
   padding: 0;
-  position: relative;
-  margin-bottom: 80px; }
+  position: relative; }
   .cover figure {
     width: 100%; }
     .cover figure img {
@@ -5325,9 +5324,17 @@ img.ratio {
     text-align: center;
     margin-top: -30px; }
 
+.video-section h2 {
+  margin-bottom: 0; }
 .video-section .video {
   padding: 0 20px;
-  margin: 0 0 80px 0; }
+  margin: 40px 0 0px 0; }
+  @media (min-width: 768px) {
+    .video-section .video {
+      margin: 80px 0 0px 0; } }
+  @media (min-width: 480px) and (max-width: 768px) {
+    .video-section .video {
+      margin: 60px 0 0px 0; } }
   .video-section .video figure {
     width: 100%;
     position: relative;
@@ -5335,6 +5342,9 @@ img.ratio {
     .video-section .video figure:hover img {
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
       transform: translateY(-60px); }
+      @media (min-width: 992px) {
+        .video-section .video figure:hover img {
+          transform: translateY(-60px); } }
     .video-section .video figure img {
       border: 1px solid #1a1a1a;
       width: 100%;
@@ -5348,24 +5358,29 @@ img.ratio {
       width: 100%;
       top: auto;
       bottom: 0;
-      background-color: #1a1a1a; }
+      background-color: #707070; }
       .video-section .video figure figcaption span {
+        font-size: 14px;
         padding: 0 20px;
         line-height: 60px;
         color: white; }
+        @media (min-width: 992px) {
+          .video-section .video figure figcaption span {
+            font-size: 18px; } }
+        @media (min-width: 480px) and (max-width: 768px) {
+          .video-section .video figure figcaption span {
+            font-size: 16px; } }
       .video-section .video figure figcaption .btn {
         position: absolute;
         right: 20px;
         top: 13px; }
 
-.about-section {
-  margin-bottom: 80px; }
-  .about-section .kwicks {
-    width: 100%; }
-    .about-section .kwicks li {
-      width: 16.66%; }
-      .about-section .kwicks li figure img {
-        transition: margin-left 1s; }
+.about-section .kwicks {
+  width: 100%; }
+  .about-section .kwicks li {
+    width: 16.66%; }
+    .about-section .kwicks li figure img {
+      transition: margin-left 0.8s; }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -5395,8 +5410,16 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 50px;
-  margin: 60px 0; }
+  font-size: 30px;
+  margin: 80px 0 30px 0; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 50px;
+      margin: 120px 0 60px 0; } }
+  @media (min-width: 480px) and (max-width: 768px) {
+    h2 {
+      font-size: 40px;
+      margin: 100px 0 45px 0; } }
 
 a {
   color: #a9a9a9; }
@@ -5419,3 +5442,7 @@ a {
       letter-spacing: 2px; } }
   .btn-default.btn-small {
     padding: 5px 20px; }
+  .btn-default.btn-transparent {
+    background: transparent; }
+    .btn-default.btn-transparent:hover {
+      background-color: #e6e6e6; }
