@@ -72,42 +72,11 @@
         li {
             width: 16.66%;
             figure {
-               img {
-                   height: 600px;
-               }
-           }
-           &:not(.kwicks-expanded) {
-               figure {
-                   img {
-                       transition: margin-left 1s;
-                       &#zhiyao {
-                           margin-left: -230px;
-                       }
-                       &#chen {
-                           margin-left: -447px;
-                       }
-                       &#ziming {
-                           margin-left: -512px;
-                       }
-                       &#xu {
-                           margin-left: -560px;
-                       }
-                       &#bob {
-                           margin-left: -422px;
-                       }
-                       &#david {
-                           margin-left: -429px;
-                       }
-                   }
-               }
-           }
-           &.kwicks-expanded {
-               figure {
-                   img {
-                       transition: margin-left 1s;
-                   }
-               }
-           }
-       }
-   }
+                img {
+                    transition: margin-left 1s;
+                }
+            }
+        }
+    }
+
 }

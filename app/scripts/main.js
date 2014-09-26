@@ -12,10 +12,4 @@ $(function() {
         $('#videoPlayer')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
     });
 
-    var $kwicks = $('.kwicks').kwicks({
-        // TODO: show full image
-        maxSize: '60%',
-        behavior: 'menu',
-        duration: 1000
-    });
 });

@@ -5365,22 +5365,6 @@ img.ratio {
     .about-section .kwicks li {
       width: 16.66%; }
       .about-section .kwicks li figure img {
-        height: 600px; }
-      .about-section .kwicks li:not(.kwicks-expanded) figure img {
-        transition: margin-left 1s; }
-        .about-section .kwicks li:not(.kwicks-expanded) figure img#zhiyao {
-          margin-left: -230px; }
-        .about-section .kwicks li:not(.kwicks-expanded) figure img#chen {
-          margin-left: -447px; }
-        .about-section .kwicks li:not(.kwicks-expanded) figure img#ziming {
-          margin-left: -512px; }
-        .about-section .kwicks li:not(.kwicks-expanded) figure img#xu {
-          margin-left: -560px; }
-        .about-section .kwicks li:not(.kwicks-expanded) figure img#bob {
-          margin-left: -422px; }
-        .about-section .kwicks li:not(.kwicks-expanded) figure img#david {
-          margin-left: -429px; }
-      .about-section .kwicks li.kwicks-expanded figure img {
         transition: margin-left 1s; }
 
 body {
