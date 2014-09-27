@@ -5271,7 +5271,7 @@ button.close {
     background-color: black; }
     @media (min-width: 768px) {
       .modal.modal-video .modal-dialog {
-        width: 768px; } }
+        width: 1024px; } }
   .modal.modal-video .modal-content {
     background-color: transparent;
     border: none; }
