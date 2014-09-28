@@ -1,6 +1,6 @@
 
 // cover
-.cover {
+.container-fluid.cover {
     padding: 0;
     position: relative;
     figure {
@@ -18,12 +18,13 @@
     }
 }
 
-// video section
 .video-section {
+    padding: 40px 0;
     h2 {
         margin-bottom: 0;
     }
     .video {
+        text-align: left;
         padding: 0 20px;
         @media (min-width: $screen-sm-min) {
             margin: 80px 0 0px 0;
@@ -72,6 +73,11 @@
                     padding: 0 20px;
                     line-height: 60px;
                     color: white;
+                    display: block;
+                    max-width: 65%;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
                 }
                 .btn {
                     position: absolute;
@@ -85,7 +91,9 @@
 
 // about section
 .about-section {
+    padding: 40px 0;
     .kwicks {
+        margin-top: 40px;
         width: 100%;
         li {
             width: 16.66%;
@@ -96,5 +104,4 @@
             }
         }
     }
-
 }

@@ -9,14 +9,14 @@ $(function() {
     });
 
     // Load iframe using url from data-video-link attribute
-    $('#videoModal').on('shown.bs.modal', function() {
-        $('#videoModal .modal-body').append('<iframe id="videoPlayer" src="' + videoLink + '" frameborder="0" width="853px" height="480px"></iframe>');
+    $('#video-modal').on('shown.bs.modal', function() {
+        $('#video-modal .modal-body').append('<iframe id="videoPlayer" src="' + videoLink + '" frameborder="0" width="853px" height="480px"></iframe>');
 
     });
 
     // Remove iframe when modal is closed
-    $('#videoModal').on('hidden.bs.modal', function() {
-        $('#videoModal .modal-body').children("iframe").remove();
+    $('#video-modal').on('hidden.bs.modal', function() {
+        $('#video-modal .modal-body').children("iframe").remove();
     });
 
 });

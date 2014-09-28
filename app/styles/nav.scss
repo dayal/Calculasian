@@ -3,6 +3,9 @@
     background: #464646 url(../images/bg.png);
     margin-bottom: 0;
     .container {
+        @media (min-width: $screen-lg-min) {
+            width: 80%;
+        }
         @media (min-width: $screen-sm-min) {
             margin: 30px auto 20px auto;
         }
@@ -10,6 +13,7 @@
             margin: 20px auto 15px auto;
         }
         margin: 10px auto 5px auto;
+        padding: 0;
         .navbar-header {
             margin: 0;
         }

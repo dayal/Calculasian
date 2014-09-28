@@ -14,10 +14,10 @@ function configureKwicks() {
     });
 
     // set height, imageWidth, imageMargin during initialization and window resizing
-    setImageStyle($kwicks);
+    setKwicksStyle($kwicks);
 
     $(window).resize(function() {
-        setImageStyle($kwicks);
+        setKwicksStyle($kwicks);
     });
 
     // clear margin when image is expanded
@@ -37,13 +37,17 @@ function configureKwicks() {
 
 }
 
-function setImageStyle($kwicks) {
+function setKwicksStyle($kwicks) {
     var kwicksWidth;
     kwicksWidth = $kwicks.width();
     $('.kwicks > li > figure > img').css({
         'height': (200 + kwicksWidth / 5) + 'px'
     });
     setImageMargin();
+    $('.about-section').css({
+        'height': $('.kwicks > li').height() + $('.about-section > h2').outerHeight(true) + 40 + 'px'
+    });
+
 }
 
 function setImageMargin() {
