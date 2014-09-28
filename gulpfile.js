@@ -54,10 +54,10 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function () {
-    return gulp.src('main-bower-files')
+    return gulp.src('app/vendor/fontello/font/*')
         .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
         .pipe($.flatten())
-        .pipe(gulp.dest('dist/fonts'))
+        .pipe(gulp.dest('dist/font'))
         .pipe($.size());
 });
 
