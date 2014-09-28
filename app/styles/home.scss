@@ -127,3 +127,49 @@
         }
     }
 }
+
+.contacts-section {
+    // hover effect: http://tympanus.net/Development/IconHoverEffects/
+    .icons {
+        a {
+            display: inline-block;
+            position: relative;
+            margin: 20px;
+            color: white;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #494949;    
+            -webkit-font-smoothing: antialiased;
+            transition: background 0.2s, color 0.2s;
+            &:before {
+                line-height: 90px;
+                font-size: 50px;
+            }
+            &:after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                left: -7px;
+                top: -7px;
+                position: absolute;
+                padding: 7px;
+                border-radius: 50%;
+                box-shadow: 0 0 0 4px #fff;
+                box-sizing: content-box;
+                opacity: 0;
+                transform: scale(.8);
+                transition: transform 0.2s, opacity 0.2s;
+            }
+            &:hover {
+                text-decoration: none;
+                color: #494949;
+                background: white;
+                &:after {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

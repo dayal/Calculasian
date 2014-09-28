@@ -1,5 +1,5 @@
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://fonts.useso.com/css?family=Lato:300);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5415,6 +5415,42 @@ img.ratio {
             .about-section .kwicks li figure figcaption h3, .about-section .kwicks li figure figcaption h4 {
               font-size: 15px; } }
 
+.contacts-section .icons a {
+  display: inline-block;
+  position: relative;
+  margin: 20px;
+  color: white;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #494949;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s, color 0.2s; }
+  .contacts-section .icons a:before {
+    line-height: 90px;
+    font-size: 50px; }
+  .contacts-section .icons a:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: -7px;
+    top: -7px;
+    position: absolute;
+    padding: 7px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #fff;
+    box-sizing: content-box;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: transform 0.2s, opacity 0.2s; }
+  .contacts-section .icons a:hover {
+    text-decoration: none;
+    color: #494949;
+    background: white; }
+    .contacts-section .icons a:hover:after {
+      opacity: 1;
+      transform: scale(1); }
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 18px;
@@ -5465,6 +5501,18 @@ h2 {
 .container, .container-fluid {
   text-align: center;
   padding: 40px 0 0; }
+
+.footer {
+  height: 30px;
+  background: #494949;
+  margin-top: 40px; }
+  .footer p {
+    line-height: 30px;
+    color: white;
+    font-size: 14px;
+    text-align: center; }
+    .footer p a {
+      color: white; }
 
 .btn-default {
   background-color: rgba(0, 0, 0, 0.3);

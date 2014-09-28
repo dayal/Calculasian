@@ -10,6 +10,7 @@
 
     <!-- build:css styles/vendor.css -->
     <link rel="stylesheet" href="/bower_components/kwicks/jquery.kwicks.min.css">
+    <link rel="stylesheet" href="/styles/fontello/css/calculasian.css">
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
@@ -31,9 +32,9 @@
             <div class="navbar-header navbar-default">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span target="_blank" class="icon-bar"></span>
+                    <span target="_blank" class="icon-bar"></span>
+                    <span target="_blank" class="icon-bar"></span>
                 </button>
                 <span class="navbar-brand">Calculasian</span>
             </div>
@@ -128,84 +129,115 @@
 
     </div>
 
-<div class="about-section container-fluid" id="about">
-    <h2>About us</h2>
-    <p>
-        We are Calculasian -- a Chinese A Cappella group founded by 6 UC Berkeley alumni. 
-        <a href="#" class="video-link" data-toggle="modal" data-target="#video-modal" data-video-link="//www.youtube.com/embed/lQBYpQG_8B4">&nbsp;Introduction Video</a>
-    </p>
-    <ul class='kwicks kwicks-horizontal'>
-        <li>
-            <figure>
-                <img id="zhiyao" src="/images/zhiyao.jpg">
-                <figcaption>
-                    <h3>Zhiyao He</h3>
-                    <h4>Soprano</h4>
-                </figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <img id="chen" src="/images/chen.jpg">
-                <figcaption>
-                    <h3>Chen Chen</h3>
-                    <h4>Soprano／VP</h4>
-                </figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <img id="ziming" src="/images/ziming.jpg">
-                <figcaption>
-                    <h3>Ziming Li</h3>
-                    <h4>Tenor/VP/</h4>
-                    <h4>Music Manager</h4>
-                </figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <img id="xu" src="/images/xu.jpg">
-                <figcaption>
-                    <h3>Xu Chen</h3>
-                    <h4>Baritone</h4>
-                </figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <img id="bob" src="/images/bob.jpg">
-                <figcaption>
-                    <h3>Bob Wang</h3>
-                    <h4>Bass／VP</h4>
-                </figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <img id="david" src="/images/david.jpg">
-                <figcaption class="black">
-                    <h3>David Lu</h3>
-                    <h4>Bass</h4>
-                </figcaption>
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <img id="yifei" src="/images/yifei.jpg">
-                <figcaption class="black">
-                    <h3>Yifei Dong</h3>
-                </figcaption>
-            </figure>
-        </li>
-    </ul>
-</div>
+    <div class="about-section container-fluid" id="about">
+        <h2>About us</h2>
+        <p>
+            We are Calculasian -- a Chinese A Cappella group founded by 6 UC Berkeley alumni.
+            <a href="#" class="video-link" data-toggle="modal" data-target="#video-modal" data-video-link="//www.youtube.com/embed/lQBYpQG_8B4">&nbsp;Introduction Video</a>
+        </p>
+        <ul class='kwicks kwicks-horizontal'>
+            <li>
+                <figure>
+                    <img id="zhiyao" src="/images/zhiyao.jpg">
+                    <figcaption>
+                        <h3>Zhiyao He</h3>
+                        <h4>Soprano</h4>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img id="chen" src="/images/chen.jpg">
+                    <figcaption>
+                        <h3>Chen Chen</h3>
+                        <h4>Soprano／VP</h4>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img id="ziming" src="/images/ziming.jpg">
+                    <figcaption>
+                        <h3>Ziming Li</h3>
+                        <h4>Tenor/VP/</h4>
+                        <h4>Music Manager</h4>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img id="xu" src="/images/xu.jpg">
+                    <figcaption>
+                        <h3>Xu Chen</h3>
+                        <h4>Baritone</h4>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img id="bob" src="/images/bob.jpg">
+                    <figcaption>
+                        <h3>Bob Wang</h3>
+                        <h4>Bass／VP</h4>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img id="david" src="/images/david.jpg">
+                    <figcaption class="black">
+                        <h3>David Lu</h3>
+                        <h4>Bass</h4>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img id="yifei" src="/images/yifei.jpg">
+                    <figcaption class="black">
+                        <h3>Yifei Dong</h3>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </div>
 
+    <div class="container contacts-section" id="contacts">
+        <h2>Contacts</h2>
+        <div class="icons">
+            <div class="col-sm-3 col-xs-6">
+                <a href=mailto:"Calculasian@gmail.com" target="_blank" class="icon-email"></a>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="http://youtube.com/user/calculasianofficial" target="_blank" class="icon-youtube"></a>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="http://u.youku.com/Calculasian" target="_blank" class="icon-youku"></a>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="http://weibo.com/calculasian" target="_blank" class="icon-weibo-1"></a>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="http://facebook.com/calculasian2013" target="_blank" class="icon-facebook"></a>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="http://page.renren.com/601850872" target="_blank" class="icon-renren"></a>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="http://twitter.com/Calculasian" target="_blank" class="icon-twitter"></a>
+            </div>
+            <div class="col-sm-3 col-xs-6">
+                <a href="http://instagram.com/calculasian" target="_blank" class="icon-instagramm"></a>
+            </div>
+        </div>
+    </div>
 
-<div class="container contact-section" id="contacts">
-    <h2>Contacts</h2>
-</div>
-
+    <div class="footer">
+        <p>
+            Designed and developed by David Lu | Copyright © 2013-2014, Calculasian | GitHub: 
+            <a href="https://github.com/dayal/Calculasian">https://github.com/dayal/Calculasian</a>
+        </p>
+    </div>
 
     <!-- Video Modal -->
     <div class="modal fade modal-video" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
