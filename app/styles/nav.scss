@@ -28,6 +28,7 @@
             letter-spacing: 1px;
             padding: 15px 0px;
             margin: 0;
+            text-transform: uppercase;
             &:hover, &:focus {
                 color: white;
             }
@@ -58,6 +59,8 @@
                 margin: 0 0 0 20px;
                 a {
                     padding: 5px 0;
+                    text-transform: uppercase;
+                    color: #a9a9a9;
                     // link effects from http://tympanus.net/Development/CreativeLinkEffects/
                     &:before, &:after {
                         display: inline-block;

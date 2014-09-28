@@ -101,6 +101,28 @@
                 img {
                     transition: margin-left 0.8s;
                 }
+                &:not(:hover) {
+                    figcaption {
+                        display: none;
+                    }
+                }
+                figcaption {
+                    position: absolute;
+                    top: 0;
+                    text-align: left;
+                    color: white;
+                    &.black {
+                        color: black;
+                    }
+                    @media (max-width: $screen-sm-min) {
+                        h3, h4 {
+                            font-size: 15px;
+                        }
+                        padding: 20px;
+                    }
+                    padding: 40px;
+                    font-size: 25px;
+                }
             }
         }
     }

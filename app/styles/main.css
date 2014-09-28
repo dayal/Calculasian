@@ -1,5 +1,4 @@
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-@import url(../components/kwicks/jquery.kwicks.min.css);
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 html {
   font-family: sans-serif;
@@ -5223,6 +5222,7 @@ button.close {
       letter-spacing: 1px;
       padding: 15px 0px;
       margin: 0;
+      text-transform: uppercase;
       font-size: 20px; }
       .navbar .container .navbar-brand:hover, .navbar .container .navbar-brand:focus {
         color: white; }
@@ -5248,7 +5248,9 @@ button.close {
             .navbar .container .navbar-nav li a {
               padding: 16px 0; } }
         .navbar .container .navbar-nav li a {
-          padding: 5px 0; }
+          padding: 5px 0;
+          text-transform: uppercase;
+          color: #a9a9a9; }
           .navbar .container .navbar-nav li a:before, .navbar .container .navbar-nav li a:after {
             display: inline-block;
             opacity: 0;
@@ -5396,6 +5398,22 @@ img.ratio {
       width: 16.66%; }
       .about-section .kwicks li figure img {
         transition: margin-left 0.8s; }
+      .about-section .kwicks li figure:not(:hover) figcaption {
+        display: none; }
+      .about-section .kwicks li figure figcaption {
+        position: absolute;
+        top: 0;
+        text-align: left;
+        color: white;
+        padding: 40px;
+        font-size: 25px; }
+        .about-section .kwicks li figure figcaption.black {
+          color: black; }
+        @media (max-width: 768px) {
+          .about-section .kwicks li figure figcaption {
+            padding: 20px; }
+            .about-section .kwicks li figure figcaption h3, .about-section .kwicks li figure figcaption h4 {
+              font-size: 15px; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -5404,6 +5422,10 @@ body {
 
 body, .navbar-default {
   background: #464646 url(../images/bg.png); }
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  white-space: nowrap; }
 
 h1 {
   font-size: 30px;
@@ -5440,9 +5462,6 @@ h2 {
       font-size: 40px;
       margin: 45px 0; } }
 
-a {
-  color: #a9a9a9; }
-
 .container, .container-fluid {
   text-align: center;
   padding: 40px 0 0; }
@@ -5450,6 +5469,7 @@ a {
 .btn-default {
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
+  text-transform: uppercase;
   font-size: 12px;
   padding: 5px 20px;
   letter-spacing: 1px; }
@@ -5463,6 +5483,8 @@ a {
       font-size: 15px;
       padding: 10px 40px;
       letter-spacing: 2px; } }
+  .btn-default a {
+    color: #a9a9a9; }
   .btn-default.btn-small {
     padding: 5px 20px; }
   .btn-default.btn-transparent {
