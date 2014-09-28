@@ -5,5 +5,8 @@
     "bootstrap-sass-official": "~3.1.1",
     "jquery": "~1.11.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "main": [
+    "vendor/fontello/font/*"
+  ],
 }

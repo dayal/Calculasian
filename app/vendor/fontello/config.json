@@ -1,0 +1,70 @@
+{
+  "name": "calculasian",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0f6a2573a7b6df911ed199bb63717e27",
+      "css": "github-circled",
+      "code": 59400,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4c1ef492f1d2c39a2250ae457cee2a6e",
+      "css": "instagramm",
+      "code": 59396,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e9107949dd6c9e8ab2b29ae07156e38c",
+      "css": "linkedin",
+      "code": 59401,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "cfa8a2588cab42a6ff7ba81eb4fec21b",
+      "css": "renren",
+      "code": 59397,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "627abcdb627cb1789e009c08e2678ef9",
+      "css": "twitter",
+      "code": 59395,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9854b94688e31450fc76aae4c2a45dff",
+      "css": "weibo-1",
+      "code": 59398,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a9862b9d5197886c1ad693ecd7120b31",
+      "css": "youtube",
+      "code": 59394,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "a58032f4aafd0eec54803075f5b320d4",
+      "css": "email",
+      "code": 59392,
+      "src": "zocial"
+    },
+    {
+      "uid": "c874a7b43d3f61059bd6db64fc7d6cb3",
+      "css": "youku",
+      "code": 59399,
+      "src": "brandico"
+    }
+  ]
+}

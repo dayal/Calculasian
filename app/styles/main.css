@@ -1,5 +1,5 @@
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-@import url(http://fonts.useso.com/css?family=Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5359,7 +5359,7 @@ img.ratio {
         width: 100%;
         height: 100%;
         z-index: 10;
-        transition: transform 0.4s;
+        transition: transform 0.3s;
         position: relative; }
       .video-section .video figure figcaption {
         position: absolute;
@@ -5399,12 +5399,14 @@ img.ratio {
       .about-section .kwicks li figure img {
         transition: margin-left 0.8s; }
       .about-section .kwicks li figure:not(:hover) figcaption {
-        display: none; }
+        opacity: 0; }
       .about-section .kwicks li figure figcaption {
         position: absolute;
         top: 0;
         text-align: left;
         color: white;
+        opacity: 1;
+        transition: opacity 0.5s;
         padding: 40px;
         font-size: 25px; }
         .about-section .kwicks li figure figcaption.black {
@@ -5484,7 +5486,7 @@ h1 {
 h2 {
   font-size: 30px;
   margin: 0 0 30px 0;
-  border-top: dotted 1px white;
+  border-top: solid 1px white;
   display: inline-block;
   padding-top: 20px;
   color: white;
