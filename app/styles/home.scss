@@ -115,10 +115,15 @@
                     transition: opacity 0.5s;
                     &.black {
                         color: black;
+                        font-weight: bolder;
                     }
                     @media (max-width: $screen-sm-min) {
-                        h3, h4 {
+                        h3 {
                             font-size: 15px;
+                        }
+                        h4 {
+                            font-size: 10px;
+                            margin: 0;
                         }
                         padding: 20px;
                     }
@@ -131,13 +136,18 @@
 }
 
 .contacts-section {
+    width: 70%;
     // hover effect: http://tympanus.net/Development/IconHoverEffects/
     .icons {
         a {
+            margin: 20px;
             display: inline-block;
             position: relative;
-            margin: 20px;
             color: white;
+            @media (max-width: $screen-xs-min) {
+                width: 50px;
+                height: 50px;
+            }    
             width: 90px;
             height: 90px;
             border-radius: 50%;
@@ -145,6 +155,10 @@
             -webkit-font-smoothing: antialiased;
             transition: background 0.2s, color 0.2s;
             &:before {
+                @media (max-width: $screen-xs-min) {
+                    line-height: 50px;
+                    font-size: 30px;
+                }    
                 line-height: 90px;
                 font-size: 50px;
             }
