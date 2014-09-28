@@ -1,10 +1,14 @@
 .modal.modal-video {
     overflow: hidden;
     .modal-dialog {
-        @media (min-width: $screen-sm-min) {
-            width: 1024px;
-        }
-        margin: 9% auto 0 auto;
+        top: 0;
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+        // height will be dynamically calculated
+        height: 100px;
+        margin: auto;
+        position: absolute;
         background-color: black;
     }
 
@@ -35,7 +39,7 @@
         z-index: 100;
         margin: 0;
         line-height: 25px;
-        padding: 0px 0px 2px 2px;
+        padding: 0px 0px 1px 1px;
         background-color: black;
         border: 2px solid white;
         border-radius: 50%;
