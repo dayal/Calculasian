@@ -5500,6 +5500,11 @@ h2 {
       font-size: 40px;
       margin: 45px 0; } }
 
+a {
+  color: #428bca; }
+  a:hover {
+    color: #428bca; }
+
 .container, .container-fluid {
   text-align: center;
   padding: 40px 0 0; }
