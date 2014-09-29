@@ -43,7 +43,7 @@ function configureKwicks() {
         // TODO: show full image
         maxSize: '50%',
         behavior: 'menu',
-        duration: 1000
+        duration: 800
     });
 
     // set height, imageWidth, imageMargin during initialization and window resizing

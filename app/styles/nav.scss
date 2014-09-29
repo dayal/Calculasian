@@ -5,15 +5,14 @@
     .container {
         @media (min-width: $screen-lg-min) {
             width: 80%;
-        }
-        @media (min-width: $screen-sm-min) {
             margin: 30px auto 20px auto;
         }
-        @media (min-width: $screen-xs-min) and (max-width: $screen-sm-min) {
-            margin: 20px auto 15px auto;
+        @media (min-width: $screen-sm-min) and (max-width: $screen-lg-min) {
+            width: 100%;
+            margin: 30px auto 20px auto;
         }
-        margin: 10px auto 5px auto;
-        padding: 0;
+        margin: 20px auto 15px auto;
+        padding: 0 20px;
         .navbar-header {
             margin: 0;
         }
@@ -48,6 +47,9 @@
             padding-top: 5px;
             float: right;
             li {
+                @media (min-width: $screen-md-min) {
+                    margin-right: 20px;
+                }
                 @media (min-width: $screen-sm-min) {
                     a {
                         padding: 16px 0;
@@ -57,7 +59,7 @@
                 }
                 text-align: center;
                 font-size: 15px;
-                margin: 0 0 0 20px;
+                margin: 0 0 0 10px;
                 a {
                     display: inline-block;
                     padding: 5px 0;
@@ -65,7 +67,7 @@
                     color: #a9a9a9;
                     &:hover {
                         background-color: inherit;
-                        color: inherit;
+                        color: white;
                     }     
                     &.section-link {
                         // link effects from http://tympanus.net/Development/CreativeLinkEffects/
@@ -95,9 +97,6 @@
                     @media (min-width: $screen-md-min) {
                         margin-left: 100px;
                     }
-                    a:hover {
-                        text-decoration: underline;
-                    }  
                 }
             }
         }

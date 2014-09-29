@@ -55,6 +55,18 @@
       "src": "fontawesome"
     },
     {
+      "uid": "8d584f31a5d54de313f1f3da28708ec0",
+      "css": "paypal",
+      "code": 59402,
+      "src": "entypo"
+    },
+    {
+      "uid": "523e56b66e166a5bb7b823844bdf56e6",
+      "css": "bitcoin",
+      "code": 59403,
+      "src": "zocial"
+    },
+    {
       "uid": "a58032f4aafd0eec54803075f5b320d4",
       "css": "email",
       "code": 59392,

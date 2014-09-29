@@ -13,6 +13,9 @@ function showCn() {
 }
 
 $(function() {
+
+    $('body').show();
+
     // language
     var browserLanguage = navigator.language || navigator.userLanguage;
     if (browserLanguage.substr(0, 3) === 'zh-') {
@@ -25,5 +28,11 @@ $(function() {
     });
     $(document).on('click', '.language-en', function() {
         showEn();
+    });
+
+    // donate button
+
+    $(document).on('click', '.donate-paypal', function() {
+        $('.donate-paypal-form').submit();
     });
 });

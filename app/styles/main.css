@@ -5198,17 +5198,16 @@ button.close {
   background: #464646 url(../images/bg.png);
   margin-bottom: 0; }
   .navbar .container {
-    margin: 10px auto 5px auto;
-    padding: 0; }
+    margin: 20px auto 15px auto;
+    padding: 0 20px; }
     @media (min-width: 1200px) {
       .navbar .container {
-        width: 80%; } }
-    @media (min-width: 768px) {
-      .navbar .container {
+        width: 80%;
         margin: 30px auto 20px auto; } }
-    @media (min-width: 480px) and (max-width: 768px) {
+    @media (min-width: 768px) and (max-width: 1200px) {
       .navbar .container {
-        margin: 20px auto 15px auto; } }
+        width: 100%;
+        margin: 30px auto 20px auto; } }
     .navbar .container .navbar-header {
       margin: 0; }
     .navbar .container .navbar-toggle {
@@ -5240,7 +5239,10 @@ button.close {
       .navbar .container .navbar-nav li {
         text-align: center;
         font-size: 15px;
-        margin: 0 0 0 20px; }
+        margin: 0 0 0 10px; }
+        @media (min-width: 992px) {
+          .navbar .container .navbar-nav li {
+            margin-right: 20px; } }
         @media (min-width: 768px) {
           .navbar .container .navbar-nav li {
             font-size: 20px;
@@ -5254,7 +5256,7 @@ button.close {
           color: #a9a9a9; }
           .navbar .container .navbar-nav li a:hover {
             background-color: inherit;
-            color: inherit; }
+            color: white; }
           .navbar .container .navbar-nav li a.section-link:before, .navbar .container .navbar-nav li a.section-link:after {
             display: inline-block;
             opacity: 0;
@@ -5275,8 +5277,6 @@ button.close {
           @media (min-width: 992px) {
             .navbar .container .navbar-nav li.language {
               margin-left: 100px; } }
-          .navbar .container .navbar-nav li.language a:hover {
-            text-decoration: underline; }
 
 .modal.modal-video {
   overflow: hidden; }
@@ -5361,8 +5361,8 @@ img.ratio {
       margin: 0; }
       .video-section .video figure:hover img {
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-        transform: translateY(-60px); }
-        @media (min-width: 992px) {
+        transform: translateY(-40px); }
+        @media (min-width: 480px) {
           .video-section .video figure:hover img {
             transform: translateY(-60px); } }
       .video-section .video figure img {
@@ -5370,35 +5370,44 @@ img.ratio {
         width: 100%;
         height: 100%;
         z-index: 10;
-        transition: transform 0.3s;
+        transition: transform 0.5s;
         position: relative; }
       .video-section .video figure figcaption {
         position: absolute;
-        height: 60px;
+        height: 40px;
         width: 100%;
         top: auto;
         bottom: 0;
         background-color: #707070; }
+        @media (min-width: 480px) {
+          .video-section .video figure figcaption {
+            height: 60px; } }
         .video-section .video figure figcaption span {
           font-size: 14px;
           padding: 0 20px;
-          line-height: 60px;
+          line-height: 40px;
           color: white;
           display: block;
-          max-width: 65%;
+          max-width: 63%;
           text-overflow: ellipsis;
           overflow: hidden;
           white-space: nowrap; }
           @media (min-width: 992px) {
             .video-section .video figure figcaption span {
               font-size: 18px; } }
-          @media (min-width: 480px) and (max-width: 768px) {
+          @media (min-width: 480px) and (max-width: 992px) {
             .video-section .video figure figcaption span {
               font-size: 16px; } }
+          @media (min-width: 480px) {
+            .video-section .video figure figcaption span {
+              line-height: 60px; } }
         .video-section .video figure figcaption .btn {
           position: absolute;
           right: 20px;
-          top: 13px; }
+          top: 6px; }
+          @media (min-width: 480px) {
+            .video-section .video figure figcaption .btn {
+              top: 15px; } }
 
 .about-section {
   padding: 40px 0; }
@@ -5491,7 +5500,7 @@ h1, h2, h3, h4 {
   white-space: nowrap; }
 
 h1 {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 15px;
   text-shadow: 2px 2px #686666;
   letter-spacing: 0px;
@@ -5504,13 +5513,13 @@ h1 {
       text-shadow: 4px 4px #686666; } }
   @media (min-width: 480px) and (max-width: 768px) {
     h1 {
-      font-size: 45px;
+      font-size: 35px;
       margin-bottom: 25px;
       text-shadow: 3px 3px #686666; } }
 
 h2 {
-  font-size: 30px;
-  margin: 0 0 30px 0;
+  font-size: 25px;
+  margin: 0 0 20px 0;
   border-top: solid 1px white;
   display: inline-block;
   padding-top: 20px;
@@ -5522,8 +5531,8 @@ h2 {
       margin: 60px 0; } }
   @media (min-width: 480px) and (max-width: 768px) {
     h2 {
-      font-size: 40px;
-      margin: 45px 0; } }
+      font-size: 30px;
+      margin: 30px 0; } }
 
 a {
   color: #428bca; }
@@ -5539,13 +5548,23 @@ a {
   margin-top: 40px; }
   .footer p {
     line-height: 30px;
-    color: white;
     font-size: 14px;
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
     .footer p a {
-      color: white; }
+      color: #a9a9a9;
+      text-decoration: none; }
+      .footer p a:hover {
+        color: white; }
     .footer p span {
       white-space: nowrap; }
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .col-ms-6 {
+    width: 50%; } }
+
+.cn {
+  display: none; }
 
 .btn-default {
   background-color: rgba(0, 0, 0, 0.3);
@@ -5555,11 +5574,6 @@ a {
   padding: 5px 20px;
   letter-spacing: 1px; }
   @media (min-width: 768px) {
-    .btn-default {
-      font-size: 15px;
-      padding: 10px 40px;
-      letter-spacing: 2px; } }
-  @media (min-width: 480px) and (max-width: 768px) {
     .btn-default {
       font-size: 15px;
       padding: 10px 40px;
