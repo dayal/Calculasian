@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Calculasian</title>
+    <title>Calculasian Official Website</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -11,6 +11,7 @@
     <!-- build:css styles/vendor.css -->
     <link rel="stylesheet" href="/vendor/kwicks/jquery.kwicks.min.css">
     <link rel="stylesheet" href="/vendor/fontello/css/calculasian.css">
+    <link rel="stylesheet" href="/vendor/google-fonts/stylesheet.css">
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
@@ -40,12 +41,25 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#videos">videos</a>
+                    <li>
+                        <a class="section-link en" href="#videos">videos</a>
+                        <a class="section-link cn" href="#videos">视频</a>
                     </li>
-                    <li><a href="#about">About</a>
+                    <li>
+                        <a class="section-link en" href="#about">About</a>
+                        <a class="section-link cn" href="#about">关于</a>
                     </li>
-                    <li><a href="#contacts">Contacts</a>
+                    <li>
+                        <a class="section-link en" href="#contacts">Contacts</a>
+                        <a class="section-link cn" href="#contacts">联系我们</a>
+
                     </li>
+                    <li class="language">
+                        <a href="#" class="language-cn">中</a>
+                        |
+                        <a href="#" class="language-en">en</a>
+                    </li>
+
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -57,20 +71,22 @@
             <img src="/images/cover.jpg">
         </figure>
         <div class="cover-content">
-            <h1>White Moonlight</h1>
+            <h1 class="en">White Moonlight</h1>
+            <h1 class="cn">白月光</h1>
             <a href="#" class="btn btn-default video-link" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//youtube.com/embed/czXUyd10soY?enablejsapi=1">play</a>
         </div>
     </div>
 
     <div class="video-section container-fluid" id="videos">
-        <h2>Videos</h2>
+        <h2 class="en">Videos</h2>
+        <h2 class="cn">视频</h2>
         <br>
-
         <div class="video video-large col-lg-4 col-sm-6 col-xs-12">
             <figure>
                 <img src="/images/evolution-of-chinese-music.jpg">
                 <figcaption>
-                    <span>Evolution of Chinese Music</span>
+                    <span class="en">Evolution of Chinese Music</span>
+                    <span class="cn">华语流行乐进化史</span>
                     <a href="#" class="btn btn-default btn-small btn-transparent video-link" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//youtube.com/embed/qI4LdAUT0lQ">play</a>
                 </figcaption>
             </figure>
@@ -80,7 +96,8 @@
             <figure>
                 <img src="/images/the-era-of-jay-part-1.jpg">
                 <figcaption>
-                    <span>The Era of Jay (Part I)</span>
+                    <span class="en">The Era of Jay (Part I)</span>
+                    <span class="cn">依然周杰伦（上）</span>
                     <a href="#" class="btn btn-default btn-small btn-transparent video-link" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//youtube.com/embed/AEpwAzLISXU">play</a>
                 </figcaption>
             </figure>
@@ -90,7 +107,8 @@
             <figure>
                 <img src="/images/where-did-time-fly.jpg">
                 <figcaption>
-                    <span>Where Did Time Fly</span>
+                    <span class="en">Where Did Time Fly</span>
+                    <span class="cn">时间都去哪儿了</span>
                     <a href="#" class="btn btn-default btn-small btn-transparent video-link" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//youtube.com/embed/JMyZDJBMC0w">play</a>
                 </figcaption>
             </figure>
@@ -100,7 +118,8 @@
             <figure>
                 <img src="/images/frozen.jpg">
                 <figcaption>
-                    <span>Frozen</span>
+                    <span class="en">Frozen</span>
+                    <span class="cn">冰雪奇缘</span>
                     <a href="#" class="btn btn-default btn-small btn-transparent video-link" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//youtube.com/embed/IrObyn-T-vo">play</a>
                 </figcaption>
             </figure>
@@ -110,7 +129,8 @@
             <figure>
                 <img src="/images/brightest-star-in-the-night-sky.jpg">
                 <figcaption>
-                    <span>Brightest Star in the Night Sky</span>
+                    <span class="en">Brightest Star in the Night Sky</span>
+                    <span class="cn">夜空中最亮的星</span>
                     <a href="#" class="btn btn-default btn-small btn-transparent video-link" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//youtube.com/embed/V9ix0GCNlS8">play</a>
                 </figcaption>
             </figure>
@@ -120,7 +140,8 @@
             <figure>
                 <img src="/images/love-never-felt-so-good.jpg">
                 <figcaption>
-                    <span>Love Never Felt So Good</span>
+                    <span class="en">Love Never Felt So Good</span>
+                    <span class="cn">爱从未如此美好</span>
                     <a href="#" class="btn btn-default btn-small btn-transparent video-link" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//youtube.com/embed/HzwO_66VGoE">play</a>
                 </figcaption>
             </figure>
@@ -130,18 +151,25 @@
     </div>
 
     <div class="about-section container-fluid" id="about">
-        <h2>About us</h2>
-        <p>
+        <h2 class="en">About us</h2>
+        <h2 class="cn">关于我们</h2>
+        <p class="en">
             We are Calculasian -- a Chinese A Cappella group founded by 6 UC Berkeley alumni.
             <a href="#" class="video-link" data-toggle="modal" data-target="#video-modal" data-video-link="//www.youtube.com/embed/lQBYpQG_8B4">&nbsp;Introduction Video</a>
+        </p>
+        <p class="cn">
+            我们是 Calculasian -- UC Berkeley 6名学生成立的自嗨清唱团!
+            <a href="#" class="video-link" data-toggle="modal" data-target="#video-modal" data-video-link="//www.youtube.com/embed/lQBYpQG_8B4">&nbsp;自我介绍视频</a>
         </p>
         <ul class='kwicks kwicks-horizontal'>
             <li>
                 <figure>
                     <img id="zhiyao" src="/images/zhiyao.jpg">
                     <figcaption>
-                        <h3>Zhiyao He</h3>
-                        <h4>Soprano</h4>
+                        <h3 class="en">Zhiyao He</h3>
+                        <h3 class="cn">何知遥</h3>
+                        <h4 class="en">Soprano</h4>
+                        <h4 class="cn">女高音</h4>
                     </figcaption>
                 </figure>
             </li>
@@ -149,8 +177,10 @@
                 <figure>
                     <img id="chen" src="/images/chen.jpg">
                     <figcaption>
-                        <h3>Chen Chen</h3>
-                        <h4>Soprano／VP</h4>
+                        <h3 class="en">Chen Chen</h3>
+                        <h3 class="cn">陈晨</h3>
+                        <h4 class="en">Soprano／VP</h4>
+                        <h4 class="cn">女中音／人声打击</h4>
                     </figcaption>
                 </figure>
             </li>
@@ -158,9 +188,12 @@
                 <figure>
                     <img id="ziming" src="/images/ziming.jpg">
                     <figcaption>
-                        <h3>Ziming Li</h3>
-                        <h4>Tenor/VP/</h4>
-                        <h4>Music Manager</h4>
+                        <h3 class="en">Ziming Li</h3>
+                        <h3 class="cn">黎子明</h3>
+                        <h4 class="en">Tenor/VP</h4>
+                        <h4 class="cn">男高音／人声打击</h4>
+                        <h4 class="en">Music Manager</h4>
+                        <h4 class="cn">音乐总监</h4>
                     </figcaption>
                 </figure>
             </li>
@@ -168,8 +201,10 @@
                 <figure>
                     <img id="xu" src="/images/xu.jpg">
                     <figcaption>
-                        <h3>Xu Chen</h3>
-                        <h4>Baritone</h4>
+                        <h3 class="en">Xu Chen</h3>
+                        <h3 class="cn">陈序</h3>
+                        <h4 class="en">Baritone</h4>
+                        <h4 class="cn">男中音</h4>
                     </figcaption>
                 </figure>
             </li>
@@ -177,8 +212,10 @@
                 <figure>
                     <img id="bob" src="/images/bob.jpg">
                     <figcaption>
-                        <h3>Bob Wang</h3>
-                        <h4>Bass／VP</h4>
+                        <h3 class="en">Bob Wang</h3>
+                        <h3 class="cn">王天意</h3>
+                        <h4 class="en">Bass／VP</h4>
+                        <h4 class="cn">男低音／人声打击</h4>
                     </figcaption>
                 </figure>
             </li>
@@ -186,8 +223,10 @@
                 <figure>
                     <img id="david" src="/images/david.jpg">
                     <figcaption class="black">
-                        <h3>David Lu</h3>
-                        <h4>Bass</h4>
+                        <h3 class="en">David Lu</h3>
+                        <h3 class="cn">卢烨</h3>
+                        <h4 class="en">Bass</h4>
+                        <h4 class="cn">男低音</h4>
                     </figcaption>
                 </figure>
             </li>
@@ -195,8 +234,10 @@
                 <figure>
                     <img id="yifei" src="/images/yifei.jpg">
                     <figcaption class="black">
-                        <h3>Yifei Dong</h3>
-                        <h4>General Manager</h4>
+                        <h3 class="en">Yifei Dong</h3>
+                        <h3 class="cn">董忆非</h3>
+                        <h4 class="en">Music Producer</h4>
+                        <h4 class="cn">音乐制作助理</h4>
                     </figcaption>
                 </figure>
             </li>
@@ -204,7 +245,8 @@
     </div>
 
     <div class="container contacts-section" id="contacts">
-        <h2>Contacts</h2>
+        <h2 class="en">Contacts</h2>
+        <h2 class="cn">联系我们</h2>
         <div class="icons">
             <div class="col-sm-3 col-xs-6">
                 <a href=mailto:"Calculasian@gmail.com" target="_blank" class="icon-email"></a>

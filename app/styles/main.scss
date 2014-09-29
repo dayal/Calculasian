@@ -1,5 +1,4 @@
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
-@import url(http://fonts.googleapis.com/css?family=Lato:300);
 @import "nav";
 @import "videoModal";
 @import "home";
@@ -85,6 +84,7 @@ a {
     }
 }
 
+// button
 .btn-default {
     background-color: rgba(0,0,0,0.3);
     color: white;
