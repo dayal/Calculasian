@@ -1,13 +1,13 @@
 'use strict';
 
 function showEn() {
-    document.title = "Calculasian Official Website";
+    document.title = 'Calculasian Official Website';
     $('.cn').hide();
     $('.en').show();
 }
 
 function showCn() {
-    document.title = "Calculasian 官方网站";
+    document.title = 'Calculasian 官方网站';
     $('.en').hide();
     $('.cn').show();
 }
@@ -15,7 +15,7 @@ function showCn() {
 $(function() {
     // language
     var browserLanguage = navigator.language || navigator.userLanguage;
-    if (browserLanguage.substr(0, 3) == "zh-") {
+    if (browserLanguage.substr(0, 3) === 'zh-') {
         showCn();
     } else {
         showEn();
