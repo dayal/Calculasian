@@ -15,9 +15,13 @@ function showCn() {
 }
 
 $(function() {
-
-    showEn();
-    // language toggle
+    // language
+    var browserLanguage = navigator.language || navigator.userLanguage;
+    if (browserLanguage.substr(0, 3) == "zh-") {
+        showCn();
+    } else {
+        showEn();
+    }
     $(document).on('click', '.language-cn', function() {
         showCn();
     });
