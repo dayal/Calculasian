@@ -19,7 +19,7 @@
     .modal-body {
         padding: 0;
         border: 1px solid transparent;
-        border-radius: 20px;
+        @include border-radius(20px);
         z-index: 0;
         iframe {
             position: absolute;
@@ -42,7 +42,7 @@
         padding: 0px 0px 1px 1px;
         background-color: black;
         border: 2px solid white;
-        border-radius: 50%;
+        @include border-radius(50%);
         height: 30px;
         width: 30px;
         &:focus {

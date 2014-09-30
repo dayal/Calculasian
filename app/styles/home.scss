@@ -42,9 +42,9 @@
                 img {
                     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
                     @media (min-width: $screen-xs-min) {
-                        transform: translateY(-60px);
+                        @include transform(translateY(-60px));
                     }
-                    transform: translateY(-40px);
+                    @include transform(translateY(-40px));
                 }
             }
             img {
@@ -52,7 +52,7 @@
                 width: 100%;
                 height: 100%;
                 z-index: 10;
-                transition: transform 0.5s;
+                @include transition(transform 0.5s);
                 position: relative;
             }
             figcaption {
@@ -108,7 +108,7 @@
             width: 16.66%;
             figure {
                 img {
-                    transition: margin-left 0.8s;
+                    @include transition(margin-left 0.8s);
                 }
                 &:not(:hover) {
                     figcaption {
@@ -121,7 +121,7 @@
                     text-align: left;
                     color: white;
                     opacity: 1;
-                    transition: opacity 0.5s;
+                    @include transition(opacity 0.5s);
                     &.black {
                         color: black;
                         font-weight: bolder;
@@ -159,10 +159,10 @@
             }    
             width: 90px;
             height: 90px;
-            border-radius: 50%;
+            @include border-radius(50%);
             background: #494949;    
             -webkit-font-smoothing: antialiased;
-            transition: background 0.2s, color 0.2s;
+            @include transition(background 0.2s, color 0.2s);
             &:before {
                 @media (max-width: $screen-xs-min) {
                     line-height: 50px;
@@ -179,12 +179,12 @@
                 top: -7px;
                 position: absolute;
                 padding: 7px;
-                border-radius: 50%;
+                @include border-radius(50%);
                 box-shadow: 0 0 0 4px #fff;
                 box-sizing: content-box;
                 opacity: 0;
-                transform: scale(.8);
-                transition: transform 0.2s, opacity 0.2s;
+                @include transform(scale(.8));
+                @include transition(transform 0.2s, opacity 0.2s);
             }
             &:hover {
                 text-decoration: none;
@@ -192,7 +192,7 @@
                 background: white;
                 &:after {
                     opacity: 1;
-                    transform: scale(1);
+                    @include transform(scale(1));
                 }
             }
         }

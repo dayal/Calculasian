@@ -1,4 +1,29 @@
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($transition-args...) {
+    -webkit-transition: $transition-args;
+    -moz-transition: $transition-args;
+    -ms-transition: $transition-args;
+    -o-transition: $transition-args;
+    transition: $transition-args;
+}
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
 @import "nav";
 @import "videoModal";
 @import "home";

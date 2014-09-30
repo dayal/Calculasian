@@ -18,7 +18,7 @@ $(function() {
 
     // language
     var browserLanguage = navigator.language || navigator.userLanguage;
-    if (browserLanguage.substr(0, 3) === 'zh-') {
+    if (browserLanguage.toLowerCase() === 'zh-cn') {
         showCn();
     } else {
         showEn();
