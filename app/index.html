@@ -33,7 +33,6 @@
         <div class="container">
             <div class="navbar-header navbar-default">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
                     <span target="_blank" class="icon-bar"></span>
                     <span target="_blank" class="icon-bar"></span>
                     <span target="_blank" class="icon-bar"></span>
@@ -67,16 +66,59 @@
         </div>
     </div>
 
-    <div class="cover container-fluid">
-        <figure>
-            <img src="/images/cover.jpg">
-        </figure>
-        <div class="cover-content">
-            <h1 class="en">White Moonlight</h1>
-            <h1 class="cn">白月光</h1>
-            <a href="#" class="btn btn-default video-link en" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//youtube.com/embed/czXUyd10soY">play</a>
-            <a href="#" class="btn btn-default video-link cn" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//player.youku.com/embed/XNzc0NDQyMzIw">播放</a>
+    <div id="cover" class="container-fluid carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#cover" data-slide-to="0" class="active black"></li>
+            <li data-target="#cover" data-slide-to="1"></li>
+            <li data-target="#cover" data-slide-to="2"></li>
+            <li data-target="#cover" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <figure>
+                    <img src="/images/happy-new-year.jpg">
+                </figure>
+                <div class="cover-content-center">
+                    <h1 class="en">We wish you a prosperous 2015!</h1>
+                    <h1 class="cn">Calculasian祝大家新年快乐！</h1>
+                    <a href="#" class="btn btn-default video-link cn" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//player.youku.com/embed/XODYyMTM4NDU2">祝福视频</a>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="/images/tsinghua-141228.jpg">
+                </figure>
+                <div class="cover-content-lower-right">
+                    <p class="en">2014/12/28 Live performance at Tsinghua Univerisity</p>
+                    <p class="cn">2014/12/28 清华&Calculasian联合阿卡贝拉音乐会</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="/images/tsinghua-141228-2.jpg">
+                </figure>
+                <div class="cover-content-lower-right">
+                    <p class="en">2014/12/28 Live performance at Tsinghua Univerisity</p>
+                    <p class="cn">2014/12/28 清华&Calculasian联合阿卡贝拉音乐会</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <figure>
+                    <img src="/images/white-moonlight-cover.jpg">
+                </figure>
+                <div class="cover-content-center">
+                    <h1 class="en">White Moonlight</h1>
+                    <h1 class="cn">白月光</h1>
+                    <a href="#" class="btn btn-default video-link en" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//youtube.com/embed/czXUyd10soY">play</a>
+                    <a href="#" class="btn btn-default video-link cn" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//player.youku.com/embed/XNzc0NDQyMzIw">播放</a>
+                </div>
+            </div>
         </div>
+
     </div>
 
     <div class="video-section container-fluid" id="videos">
@@ -155,6 +197,29 @@
             </figure>
         </div>
 
+        <div class="video video-large col-lg-4 col-ms-6 col-xs-12">
+            <figure>
+                <img src="/images/white-moonlight.jpg">
+                <figcaption>
+                    <span class="en">White Moonlight</span>
+                    <span class="cn">白月光</span>
+                    <a href="#" class="btn btn-default btn-small btn-transparent video-link en" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//youtube.com/embed/czXUyd10soY">play</a>
+                    <a href="#" class="btn btn-default btn-small btn-transparent video-link cn" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//player.youku.com/embed/XNzc0NDQyMzIw">播放</a>
+                </figcaption>
+            </figure>
+        </div>
+
+       <div class="video video-large col-lg-4 col-ms-6 col-xs-12">
+            <figure>
+                <img src="/images/fade-away.jpg">
+                <figcaption>
+                    <span class="en">Fade Away</span>
+                    <span class="cn">烟花易冷</span>
+                    <a href="#" class="btn btn-default btn-small btn-transparent video-link en" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//youtube.com/embed/vpsQXroy4p4">play</a>
+                    <a href="#" class="btn btn-default btn-small btn-transparent video-link cn" role="button" data-toggle="modal" data-target="#video-modal" data-video-link="//player.youku.com/embed/XNzk3MDAzMDMy">播放</a>
+                </figcaption>
+            </figure>
+        </div>
 
     </div>
 
@@ -286,7 +351,7 @@
     <div class="footer">
         <p>
             <span>
-                Copyright © 2013-2014, Calculasian |
+                Copyright © 2013-2015 , Calculasian |
                 Donate
                 <a href="#" class="donate-paypal icon-paypal"></a>
                 <a href="bitcoin:15WyXJ7mGUmiBAEibUSzvQ94h78JRFYfQ4" class="icon-bitcoin" target="_blank"></a>
@@ -356,6 +421,7 @@
     <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
     <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
     <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
     <script src="/vendor/kwicks/jquery.kwicks.min.js"></script>
     <!-- endbuild -->
 
