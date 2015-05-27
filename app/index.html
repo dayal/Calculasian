@@ -1,70 +1,11 @@
 <!doctype html>
 <html class="no-js">
 
-<head>
-    <meta charset="utf-8">
-    <title>Calculasian Official Website</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-    <!-- build:css styles/vendor.css -->
-    <link rel="stylesheet" href="/vendor/kwicks/jquery.kwicks.min.css">
-    <link rel="stylesheet" href="/vendor/fontello/css/calculasian.css">
-    <link rel="stylesheet" href="/vendor/google-fonts/css/stylesheet.css">
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="/styles/main.css">
-    <!-- endbuild -->
-
-</head>
+@@include('shared/_head.html')
 
 <body style="display: none">
-    <!--[if lt IE 10]>
-            <p class="en">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <p class="cn">为正常显示本站内容，请使用IE10以上版本或其他浏览器浏览本站。</p>
-    <![endif]-->
 
-    <!-- Fixed navbar -->
-    <div class="navbar" role="navigation">
-        <div class="container">
-            <div class="navbar-header navbar-default">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span target="_blank" class="icon-bar"></span>
-                    <span target="_blank" class="icon-bar"></span>
-                    <span target="_blank" class="icon-bar"></span>
-                </button>
-                <span class="navbar-brand">Calculasian</span>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a class="section-link en" href="#videos">videos</a>
-                        <a class="section-link cn" href="#videos">音乐视频</a>
-                    </li>
-                    <li>
-                        <a class="section-link en" href="#about">About</a>
-                        <a class="section-link cn" href="#about">关于</a>
-                    </li>
-                    <li>
-                        <a class="section-link en" href="#contacts">Contacts</a>
-                        <a class="section-link cn" href="#contacts">联系我们</a>
-
-                    </li>
-                    <li class="language">
-                        <a href="#" class="language-cn">中</a>
-                        |
-                        <a href="#" class="language-en">en</a>
-                    </li>
-
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </div>
+    @@include('shared/_header.html')
 
     <div id="cover" class="container-fluid carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -372,28 +313,6 @@
         <iframe id="weibo" class="cn" width="100%" height="800" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=800&fansRow=2&ptype=1&speed=0&skin=10&isTitle=0&noborder=0&isWeibo=1&isFans=0&uid=3922834695&verifier=51cb6669&dpc=1"></iframe>
     </div>
 
-    <div class="footer">
-        <p>
-            <span>
-                Copyright © 2013-2015 , Calculasian |
-                Donate
-                <a href="#" class="donate-paypal icon-paypal"></a>
-                <a href="bitcoin:15WyXJ7mGUmiBAEibUSzvQ94h78JRFYfQ4" class="icon-bitcoin" target="_blank"></a>
-            </span>
-        </p>
-        <p>
-            <span>
-                Designed and developed by David Lu
-                <a href="http://www.weibo.com/dayal" target="_blank" class="icon-weibo-1"></a>
-                <a href="http://www.linkedin.com/pub/david-lu/59/1a7/20a/" target="_blank" class="icon-linkedin"></a>
-            </span>
-            <span>
-                <a href="https://github.com/dayal/Calculasian">https://github.com/dayal/Calculasian</a>
-                <a href="https://github.com/dayal/Calculasian" target="_blank" class="icon-github-circled"></a>
-            </span>
-        </p>
-    </div>
-
     <!-- Video Modal -->
     <div class="modal fade modal-video" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
         <div class="modal-dialog">
@@ -409,48 +328,13 @@
         </div>
     </div>
 
-    <!-- Paypal Donate form -->
-    <form class="donate-paypal-form" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display: none">
-        <input type="hidden" name="cmd" value="_donations">
-        <input type="hidden" name="business" value="daya_l@qq.com">
-        <input type="hidden" name="lc" value="US">
-        <input type="hidden" name="item_name" value="Calculasian">
-        <input type="hidden" name="currency_code" value="USD">
-        <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_SM.gif:NonHosted">
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form>
+    @@include('shared/_footer.html')
 
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-    (function(b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function() {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = '//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-47540329-1');
-    ga('send', 'pageview');
-    </script>
-
-    <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+    <!-- build:js scripts/home.js -->
     <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
     <script src="/vendor/kwicks/jquery.kwicks.min.js"></script>
-    <!-- endbuild -->
 
-    <!-- build:js scripts/main.js -->
-    <script src="/scripts/main.js"></script>
     <script src="/scripts/videoModal.js"></script>
     <script src="/scripts/home.js"></script>
     <!-- endbuild -->

@@ -1,6 +1,6 @@
 .DS_Store
 .sass-cache/
-.tmp/
+dev/
 dist/
 node_modules/
 package.json

@@ -101,6 +101,9 @@ p {
         a {
             color: #a9a9a9;
             text-decoration: none;
+            &.donate-paypal {
+                cursor: pointer;
+            }
             &:hover {
                 color: white;
             }
