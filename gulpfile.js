@@ -55,7 +55,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('fonts', function () {
-    return gulp.src('app/vendor/**/*')
+    return gulp.src('app/**/*')
         .pipe($.filter('**/*.{eot,svg,ttf,woff,woff2}'))
         .pipe($.flatten())
         .pipe(gulp.dest('dist/font'))
@@ -73,11 +73,16 @@ gulp.task('extras', function () {
         .pipe(gulp.dest('dist'));
 });
 
+gulp.task('resources', function () {
+    return gulp.src('app/sheet_music/*')
+        .pipe(gulp.dest('dist/sheet_music'));
+});
+
 gulp.task('clean', function () {
     return gulp.src(['dev', 'dist'], { read: false }).pipe($.clean());
 });
 
-gulp.task('build', ['html', 'images', 'fonts', 'extras']);
+gulp.task('build', ['html', 'images', 'fonts', 'resources', 'extras']);
 
 gulp.task('default', ['clean'], function () {
     gulp.start('build');

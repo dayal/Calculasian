@@ -54,7 +54,7 @@
                 img {
                     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
                     @media (min-width: $screen-xs-min) {
-                        @include transform(translateY(-60px));
+                        @include transform(translateY(-55px));
                     }
                     @include transform(translateY(-40px));
                 }
@@ -70,14 +70,14 @@
             figcaption {
                 position: absolute;
                 @media (min-width: $screen-xs-min) {
-                    height: 60px;
+                    height: 55px;
                 }
                 height: 40px;
                 width: 100%;
                 top: auto;
                 bottom: 0;
                 background-color: #707070;
-                span {
+                .video-caption {
                     @media (min-width: $screen-md-min) {
                         font-size: 18px;
                     }
@@ -87,7 +87,7 @@
                     font-size: 14px;
                     padding: 0 20px;
                     @media (min-width: $screen-xs-min) {
-                        line-height: 60px;
+                        line-height: 55px;
                     }
                     line-height: 40px;
                     color: white;
@@ -99,11 +99,17 @@
                 }
                 .btn {
                     position: absolute;
-                    right: 20px;
-                    @media (min-width: $screen-xs-min) {
-                        top: 15px;
+                    right: 15px;
+                    @media (min-width: $screen-sm-min) {
+                        top: 12px;
                     }
                     top: 6px;
+                    &.file {
+                        @media (min-width: $screen-sm-min) {
+                            right: 80px;
+                        }
+                        right: 65px;
+                    }
                 }
             }
         }

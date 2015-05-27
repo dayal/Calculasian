@@ -1,4 +1,6 @@
+$icon-font-path: "../font/";
 @import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
+
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
@@ -137,11 +139,11 @@ p {
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    a {
-        color: #a9a9a9;
-    }
     &.btn-small {
-        padding: 5px 20px;
+        @media (min-width: $screen-sm-min) {
+            padding: 5px 20px;
+        }
+        padding: 3px 15px;
     }
     &.btn-transparent {
         background: transparent;
