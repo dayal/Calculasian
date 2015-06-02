@@ -1,6 +1,6 @@
 'use strict';
 function setModalHeight() {
-    $('.modal-dialog').css({
+    $('.modal-dialog, .ratio').css({
         'height': $(window).width() * 0.45 + 'px'
     });
 }
